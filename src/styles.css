@@ -1,11 +1,18 @@
 body {
   font-family: "Architects Daughter", cursive;
+  background: radial-gradient(
+    circle at 7.4% 45.1%,
+    rgb(236, 206, 251) 0%,
+    rgb(205, 237, 246) 45.1%,
+    rgb(227, 251, 252) 78.4%,
+    rgb(230, 247, 235) 90%
+  );
 }
 
 h1,
 header {
   text-align: center;
-  margin: 20px 0px 0px 10px;
+  margin: 10px 0px 0px 5px;
 }
 
 header {
@@ -16,67 +23,96 @@ ul {
   list-style: none;
   position: relative;
   left: 50px;
-  bottom: 40px;
+  bottom: 140px;
+  text-transform: capitalize;
 }
-.container {
+
+.weather-app {
   border: 10px solid lightblue;
-  width: 65%;
+  max-width: 1000px;
+  max-height: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.player {
+  position: relative;
+  bottom: 150px;
 }
 .time {
   position: relative;
   text-align: right;
-  font-size: 48px;
-  left: -5px;
+  font-size: 65px;
+  left: -10px;
   bottom: 150px;
 }
-.fa-cloud {
+.icon {
   position: relative;
-  bottom: 100px;
+  bottom: 290px;
   left: 500px;
 }
 .current {
   position: relative;
   text-align: right;
-  bottom: 175px;
+  bottom: 440px;
   font-size: 75px;
   right: 100px;
+  color: #cab8ff;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 .row {
   text-align: center;
   position: relative;
-  bottom: 100px;
+  bottom: 290px;
+  left: 60px;
 }
 .list-group {
   border: solid;
   color: lightblue;
 }
+
+.day {
+  color: #1e2a78;
+}
+.temp-max {
+  color: #7c83fd;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.temp-min {
+  color: #6f69ac;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
 .search,
 .btn-primary {
   position: relative;
-  bottom: 85px;
+  bottom: 400px;
   left: 250px;
   font-size: 30px;
 }
 
 .btn-success {
   position: relative;
-  bottom: 25px;
+  bottom: 350px;
   right: 150px;
 }
 
 .btn-secondary {
   position: relative;
-  right: 600px;
-  bottom: 80px;
+  right: 540px;
+  bottom: 390px;
   font-size: 45px;
 }
 .btn-warning {
   position: relative;
-  right: -75px;
-  bottom: 80px;
+  right: -35px;
+  bottom: 390px;
   font-size: 45px;
 }
 
 .info {
   text-align: center;
+  position: relative;
+  bottom: 370px;
 }
